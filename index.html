@@ -10,12 +10,12 @@
         body {
             background: url("img/wallpaper.jpg") scroll;
         }
-
+        
         .tamanho {
             width: 18.125rem;
             height: 18.125rem;
         }
-
+        
         .social img {
             width: 2.5rem;
             height: 2.5rem;
@@ -25,16 +25,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-primary navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark sticky-top" id="topbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapser">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapser">
 
-            <ul class="navbar-nav nav-pills">
+            <ul class="navbar-nav">
                 <a href="index.html" class="navbar-brand"><img src="./img/logo_sf2.png"></a>
                 <li class="nav-item">
-                    <a href="#header" class="nav-link active">
+                    <a href="#header" class="nav-link">
                         <h4>Home</h4>
                     </a>
                 </li>
@@ -46,13 +46,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="" class="nav-link">
                         <h4>Projetos</h4>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="" class="nav-link">
                         <h4>Contato</h4>
                     </a>
                 </li>
@@ -66,30 +66,32 @@
             </ul>
         </div>
         <div class="ml-auto social d-none d-md-block">
-            <a href="#" class="nav-link d-inline"><img src="./img/facebook.png"></a>
-            <a href="#" class="nav-link d-inline"><img src="./img/email.png"></a>
-            <a href="#" class="nav-link d-inline"><img src="./img/steam.png"></a>
+            <a href="" class="nav-link d-inline"><img src="./img/facebook.png"></a>
+            <a href="" class="nav-link d-inline"><img src="./img/email.png"></a>
+            <a href="" class="nav-link d-inline"><img src="./img/steam.png"></a>
         </div>
     </nav>
-    <header id="#header">
-        <div class="jumbotron mx-auto container mt-6">
-            <img src="img/felipe.jpg" class="img-fluid tamanho rounded-circle mx-auto d-block">
-            <div class="text-center mt-3 text-black">
-                <h2>Felipe Batista Alves</h2>
-                <h4>Técnico em Desenvolvimento de Sistemas</h4>
-            </div>
-        </div>
-    </header>
-    <section id="#sobre">
-        <div class="jumbotron mt-5 container">
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h1 class="text-center">Sobre</h2>
+    <div id="header" class="jumbotron mx-auto container mt-6">
+        <header class="mb-4">
+            <div class="container mt-5">
+                <img src="img/felipe.jpg" class="img-fluid tamanho rounded-circle mx-auto d-block">
+                <div class="text-center mt-3 text-black">
+                    <h2>Felipe Batista Alves</h2>
+                    <h4>Técnico em Desenvolvimento de Sistemas</h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <h3>Felipe Batista Alves</h3>
+        </header>
+        <hr class="my-8 bg-secondary">
+        <section id="sobre">
+            <div class="row mb-5 mx-auto">
+                <div class="col-12">
+                    <h1 class="text-center">Sobre</h2>
+                        <h3 class="text-center">Felipe Batista Alves</h3>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-md-6 col-sm-12">
+                    <h4 class="mb-3">Informações</h4>
                     <ul>
                         <li>
                             <p>Brasileiro</p>
@@ -102,8 +104,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6">
-                    <h4>Formação Academica</h4>
+                <div class="col-md-6 col-sm-12">
+                    <h4 class="mb-3">Formação Academica</h4>
                     <ul>
                         <li>
                             <p>Graduação em Gestão de Tecnologia da Informação</p>
@@ -114,14 +116,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mx-auto">
                 <div class="col-12">
                     <h4 class="text-center my-4">Conhecimentos/Habilidades</h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <h4>Linguas</h4>
+            <div class="row mx-auto">
+                <div class="col-md-6 col-sm-12">
+                    <h4 class="mb-3">Linguas</h4>
                     <ul>
                         <li>
                             <p>Português nativo</p>
@@ -134,21 +136,22 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-md-6 col-sm-12">
+                    <h4 class="mb-3">Programação/Marcação</h4>
+                    <ul>
+                        <li>
+                            <p>C - Basico</p>
+                        </li>
+                        <li>
+                            <p>C# - Basico</p>
+                        </li>
+                        <li>
+                            <p>HTML - intermediário</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <h5>Programação/Marcação</h5>
-            <ul>
-                <li>
-                    <p>C - Basico</p>
-                </li>
-                <li>
-                    <p>C# - Basico</p>
-                </li>
-                <li>
-                    <p>HTML - intermediário</p>
-                </li>
-            </ul>
-        </div>
-        </div>
+    </div>
     </section>
     <script src="./jquery/jquery.js"></script>
     <script src="./popper.js/popper.js"></script>

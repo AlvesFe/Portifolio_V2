@@ -10,12 +10,12 @@
         body {
             background: url("img/tile.png") repeat;
         }
-
+        
         .tamanho {
             width: 18.125rem;
             height: 18.125rem;
         }
-
+        
         .social img {
             width: 2.5rem;
             height: 2.5rem;
@@ -156,28 +156,48 @@
         <hr class="my-5 bg-secondary" id="contato">
         <section>
             <h1 class="text-center">Contato</h1>
-            <form action="" method="post">
+            <form action="index.html" method="get">
                 <div class="container my-5">
                     <div class="row form-group d-none d-md-flex">
                         <div class="col-5 mx-auto">
-                            <input class="form-control mb-3" type="text" name="Nome" id="name" placeholder="Digite seu nome aqui">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><img src="./img/nome.png"></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Digite seu nome" aria-label="Nome" aria-describedby="basic-addon1">
+                            </div>
                         </div>
                         <div class="col-5 mx-auto">
-                            <input class="form-control mb-3" type="email" name="Nome" id="email" placeholder="Digite seu e-mail">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><img src="./img/email2.png"></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="E-mail" aria-describedby="basic-addon1">
+                            </div>
                         </div>
                     </div>
-                    <div class="row form-group d-sm-block d-md-none">
+                    <div class="row form-group d-md-none d-sm-block">
                         <div class="col-5 mx-auto">
-                            <input class="form-control mb-3" type="text" name="Nome" id="name" placeholder="Nome">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><img src="./img/nome.png"></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1">
+                            </div>
                         </div>
                         <div class="col-5 mx-auto">
-                            <input class="form-control mb-3" type="email" name="Nome" id="email" placeholder="E-mail">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><img src="./img/email2.png"></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1">
+                            </div>
                         </div>
                     </div>
+
                     <div class="row form-group">
                         <div class="col-11 mx-auto">
-                            <textarea class="form-control" name="" id="" cols="" rows="10"
-                                placeholder="Digite sua mensagem"></textarea>
+                            <textarea class="form-control" name="" id="" cols="" rows="10" placeholder="Digite sua mensagem"></textarea>
                         </div>
                     </div>
                     <div class="row form-group">

@@ -157,23 +157,30 @@
             <h1 class="text-center">Contato</h1>
             <form action="" method="post">
                 <div class="container my-5">
-                    <div class="row form-group">
+                    <div class="row form-group d-none d-md-flex">
                         <div class="col-5 mx-auto">
-                            <input class="form-control mb-3" type="text" name="Nome" id="name"
-                                placeholder="Digite seu nome completo">
+                            <input class="form-control mb-3" type="text" name="Nome" id="name" placeholder="Digite seu nome aqui">
                         </div>
                         <div class="col-5 mx-auto">
-                            <input class="form-control mb-3" type="email" name="Nome" id="email"
-                                placeholder="Digite seu email">
+                            <input class="form-control mb-3" type="email" name="Nome" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                    </div>
+                    <div class="row form-group d-sm-block d-md-none">
+                        <div class="col-5 mx-auto">
+                            <input class="form-control mb-3" type="text" name="Nome" id="name" placeholder="Nome">
+                        </div>
+                        <div class="col-5 mx-auto">
+                            <input class="form-control mb-3" type="email" name="Nome" id="email" placeholder="E-mail">
                         </div>
                     </div>
                     <div class="row form-group">
                         <div class="col-11 mx-auto">
-                            <textarea class="form-control" name="" id="" cols="90" rows="10" placeholder="Digite sua mensagem"></textarea>
+                            <textarea class="form-control" name="" id="" cols="90" rows="10"
+                                placeholder="Digite sua mensagem"></textarea>
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-2 mx-auto">
+                        <div class="mx-auto">
                             <input class="form-control btn btn-outline-primary btn-lg" type="submit" value="Enviar">
                         </div>
                     </div>
